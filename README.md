@@ -3,3 +3,12 @@
  make (如果沒有Makefile 就先 cmake ..) </br>
 ./huffcode -i jame.txt -o nojame.txt -c (壓縮jame.txt </br>
 ./huffcode -i jame.txt -o nojame.txt -d (解壓縮 nojame.txt </br>
+
+# A R C D :(
+cd arcd</br>
+make</br>
+跳出來~</br>
+cd example</br>
+想辦法用出arcd_stream 的 執行檔 (此為最難的步驟，我做不到   </br>
+./arcd_stream -e < jame.txt | tee nojame.txt (壓縮) </br>
+./arcd_stream -i < jame.txt | tee nojame.txt (解壓縮) </br>
