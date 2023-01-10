@@ -4,7 +4,7 @@
 ./huffcode -i jame.txt -o nojame.txt -c (壓縮jame.txt </br>
 ./huffcode -i jame.txt -o nojame.txt -d (解壓縮 nojame.txt </br>
 
-# A R C D :(
+# Arithmetic coding  :'(
 cd arcd</br>
 make</br>
 跳出來~</br>
