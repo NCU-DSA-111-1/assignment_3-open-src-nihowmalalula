@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #ifdef WIN32
 #include <malloc.h>
@@ -30,6 +31,9 @@ static void usage(FILE* out)
 
 int main(int argc, char** argv)
 {
+	clock_t x;	//為了計時新家的
+	
+
 	char memory = 0;
 	char compress = 1;
 	int opt;
@@ -39,7 +43,7 @@ int main(int argc, char** argv)
 	int close_in = 0;
 	int close_out = 0;
 	int rc = 0;
-
+	x = clock();
 	/* Get the command line arguments. */
 	while ((opt = getopt(argc, argv, "i:o:cdhvm")) != -1)
 	{
@@ -111,6 +115,7 @@ int main(int argc, char** argv)
 
 	/* Since exit is about to happen, the fclose calls aren't necessary, but they make valgrind
 	 * happy. */
+	printf("時間啦!!!! : %ld(毫秒)\n", clock()- x);
 	if (close_in)
 	{
 		fclose(in);
@@ -120,6 +125,8 @@ int main(int argc, char** argv)
 	{
 		fclose(out);
 	}
+
+	
 
 	return rc;
 }
