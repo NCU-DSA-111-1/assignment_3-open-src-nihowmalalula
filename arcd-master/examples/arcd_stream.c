@@ -1,8 +1,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <arcd.h>
-#include <adaptive_model.h>
+#include "../arcd/arcd.h"
+#include "adaptive_model.h"
+#include <time.h>
 
 void output(const arcd_buf_t buf, const unsigned buf_bits, void *const io)
 {
