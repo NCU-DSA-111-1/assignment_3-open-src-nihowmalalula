@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/ken/中央大學/大二上學期/資料結構 Data Structure/各種程式/arcd-master2/arcd/arcd.h
+
+/mnt/c/ken/中央大學/大二上學期/資料結構 Data Structure/各種程式/arcd-master2/examples/arcd_stream.c
+string.h
+-
+stdio.h
+-
+unistd.h
+-
+../arcd/arcd.h
+/mnt/c/ken/中央大學/大二上學期/資料結構 Data Structure/各種程式/arcd-master2/arcd/arcd.h
+adaptive_model.h
+-
+time.h
+-
+
+arcd/arcd.h
+
+examples/adaptive_model.h
+arcd.h
+-
+

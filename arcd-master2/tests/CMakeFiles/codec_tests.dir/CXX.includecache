@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/ken/中央大學/大二上學期/資料結構 Data Structure/各種程式/arcd-master2/tests/codec_tests.cpp
+vector
+-
+string
+-
+sstream
+-
+numeric
+-
+arcd.h
+-
+
+arcd/arcd.h
+
